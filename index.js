@@ -10,3 +10,8 @@ navLinks.forEach(link => {
         document.body.classList.remove('nav-open');
     })
 })
+
+const gitButton = document.getElementById("git-button")
+gitButton.addEventListener('click', function(){
+    alert("Of to GitHub!")
+})
