@@ -146,6 +146,10 @@ header {
     padding-bottom: 70px;
 }
 
+.sub-header {
+    margin-top: 5px;
+}
+
 /*.im-logo {
     width: 100px;
     height: 300px;
@@ -487,4 +491,8 @@ header {
 
 .logo {
     border-radius: 50%;
+}
+
+#git-button {
+    margin-top: 50px;
 }
