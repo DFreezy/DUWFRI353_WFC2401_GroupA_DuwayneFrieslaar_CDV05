@@ -1,39 +1,49 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* Custom Properties, update these for your own design */
-
-:root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
-    
-    --fw-reg: 300;
-    --fw-bold: 900;
-    
-    --clr-light: #0cc4e4;
-    --clr-dark: #000000;
-    --clr-accent: #45e016;
-    
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
-    --fs-body: 1rem;
-    
-    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-          0.125em 0.125em 0.25em rgba(0,0,0,.15);
-}
-
-@media (min-width: 800px) {
-    :root {
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
-        --fs-h3: 1.5rem;
-        --fs-body: 1.125rem;
-    }
-}
+/* 
+ * Universal box-sizing for all elements and their pseudo-elements
+ * Ensures padding and border are included in the element's total width and height
+ */
+ *,
+ *::before,
+ *::after {
+     box-sizing: border-box; /* Apply border-box box-sizing */
+ }
+ 
+ /* 
+  * Custom Properties (CSS variables) for fonts, font weights, colors, font sizes, and box shadows
+  * Update these variables for your own design
+  */
+ :root {
+     --ff-primary: 'Source Sans Pro', sans-serif; /* Primary font family */
+     --ff-secondary: 'Source Code Pro', monospace; /* Secondary font family */
+     
+     --fw-reg: 300; /* Regular font weight */
+     --fw-bold: 900; /* Bold font weight */
+     
+     --clr-light: #0cc4e4; /* Light color */
+     --clr-dark: #000000; /* Dark color */
+     --clr-accent: #45e016; /* Accent color */
+     
+     --fs-h1: 3rem; /* Heading 1 font size */
+     --fs-h2: 2.25rem; /* Heading 2 font size */
+     --fs-h3: 1.25rem; /* Heading 3 font size */
+     --fs-body: 1rem; /* Body font size */
+     
+     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25), /* Box shadow */
+           0.125em 0.125em 0.25em rgba(0,0,0,.15);
+ }
+ 
+ /* 
+  * Media query to update font sizes for larger screens 
+  */
+ @media (min-width: 800px) {
+     :root {
+         --fs-h1: 4.5rem; /* Heading 1 font size for larger screens */
+         --fs-h2: 3.75rem; /* Heading 2 font size for larger screens */
+         --fs-h3: 1.5rem; /* Heading 3 font size for larger screens */
+         --fs-body: 1.125rem; /* Body font size for larger screens */
+     }
+ }
+ 
 
 /* General styles */
 
@@ -227,44 +237,47 @@ header {
 
 
 
-.hamburger {
-    display: block;
-    position: relative;
-    height: 100px;
+/* 
+ * Styles for the hamburger menu icon 
+ */
+ .hamburger {
+    display: block; /* Block display */
+    position: relative; /* Relative position */
+    height: 100px; /* Height */
 }
 
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-accent);
-    width: 2em;
-    height: 3px;
-    border-radius: 1em;
-    transition: transform 250ms ease-in-out;
+    background: var(--clr-accent); /* Background color */
+    width: 2em; /* Width */
+    height: 3px; /* Height */
+    border-radius: 1em; /* Border radius for rounded ends */
+    transition: transform 250ms ease-in-out; /* Smooth transition for transform property */
 }
-
 
 .hamburger::before,
 .hamburger::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
+    content: ''; /* Empty content for pseudo-elements */
+    position: absolute; /* Absolute position */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
 }
 
-.hamburger::before { top: 6px; }
-.hamburger::after { bottom: 6px; }
+.hamburger::before { top: 6px; } /* Position above the main hamburger line */
+.hamburger::after { bottom: 6px; } /* Position below the main hamburger line */
 
-
-/*  Intro section  */
-
+/* 
+ * Styles for the intro section 
+ */
 .intro {
-    position: relative;
+    position: relative; /* Relative position */
 }
 
 .intro__img {
-    box-shadow: var(--bs);
+    box-shadow: var(--bs); /* Apply box shadow */
 }
+
 
 .section__subtitle--intro {
     display: inline-block;
