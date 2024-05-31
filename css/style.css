@@ -406,6 +406,7 @@ header {
     color: var(--clr-light);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5px;
 }
 
 .portfolio__item {
@@ -497,4 +498,16 @@ header {
 
 #git-button {
     margin-top: 50px;
+}
+
+#git-button {
+    border-radius: 6px;
+    background-color: #45e016;
+    width: 200px;
+    height: 50px;
+}
+
+#git-button:hover {
+    background-color: #0cc4e4;
+    cursor: pointer;
 }

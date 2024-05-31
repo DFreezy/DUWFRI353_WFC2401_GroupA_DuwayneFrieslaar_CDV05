@@ -14,4 +14,5 @@ navLinks.forEach(link => {
 const gitButton = document.getElementById("git-button")
 gitButton.addEventListener('click', function(){
     alert("Of to GitHub!")
+    gitButton.style.backgroundColor = "red"
 })
