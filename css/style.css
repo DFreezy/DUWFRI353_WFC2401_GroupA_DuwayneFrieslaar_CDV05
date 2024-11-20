@@ -524,3 +524,84 @@ header {
     background-color: #0cc4e4;
     cursor: pointer;
 }
+
+/* Award section */
+#awards {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 2em;
+    justify-items: center;
+}
+
+.certificate-item {
+    text-align: center;
+    border: 2px solid var(--clr-accent);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: var(--bs);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds a smooth transition for hover effect */
+}
+
+.certificate-item:hover {
+    transform: scale(1.05); /* Slightly enlarges the certificate */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a stronger shadow on hover */
+}
+
+.certificate-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.certificate-item h3 {
+    margin-top: 10px;
+    color: var(--clr-dark);
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7); /* Black with opacity */
+    padding-top: 60px;
+    text-align: center;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
