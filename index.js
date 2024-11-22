@@ -14,6 +14,7 @@ navLinks.forEach(link => {
     });
 });
 
+
 // Select the GitHub button
 const gitButton = document.getElementById("git-button");
 

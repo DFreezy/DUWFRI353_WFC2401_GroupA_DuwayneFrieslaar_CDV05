@@ -605,3 +605,107 @@ header {
     text-decoration: none;
     cursor: pointer;
 }
+
+#techskills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  #techskills figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #techskills img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  #techskills img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  #techskills figcaption {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+
+  /* General Styling for Titles */
+.section__title, .sub-header {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;   /* Hides text until it is revealed by typing */
+    white-space: nowrap; /* Ensures text stays in one line */
+  }
+  
+  /* Typing Effect for the Title */
+  .section__title {
+    font-size: 3rem;
+    font-weight: bold;
+    display: inline-block;
+    animation: typing 3.5s steps(40) 1s forwards, blink-caret 0.75s step-end infinite;
+  }
+  
+  /* Typing Effect for the Subheader */
+  .sub-header {
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: 0; /* Starts hidden */
+    animation: typing 3.5s steps(30) 4s forwards, blink-caret 0.75s step-end infinite;
+  }
+  
+  /* Typing Animation */
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  /* Blinking Cursor Animation */
+  @keyframes blink-caret {
+    0%,
+    100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #fff;
+    }
+  }
+  
+  /* Add a blinking cursor effect to the text */
+  .section__title::after, .sub-header::after {
+    content: '|';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    animation: blink-caret 0.75s step-end infinite;
+  }
+  
