@@ -977,12 +977,3 @@ button:hover {
     z-index: 1; /* Keep image below modal */
 }
 
-#contactForm{
-    background-color: #000;
-    color: white;
-}
-
-#modal-content{
-    background-color: #000;
-    color: white;
-}
