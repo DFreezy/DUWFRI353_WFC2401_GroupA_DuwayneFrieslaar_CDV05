@@ -445,6 +445,9 @@ header {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
+        border: solid green;
+        border-radius: 10%;
+        margin-bottom: 20px;
 }
 
 .portfolio__item:focus {
