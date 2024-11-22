@@ -14,16 +14,14 @@ navLinks.forEach(link => {
     });
 });
 
-
 // Select the GitHub button
 const gitButton = document.getElementById("git-button");
 
 // Add event listener to the GitHub button to display an alert and change its background color to red when clicked
 gitButton.addEventListener('click', function(){
-    alert("Of to GitHub!"); // Display an alert message
+    alert("Off to GitHub!"); // Display an alert message
     gitButton.style.backgroundColor = "red"; // Change the background color of the button to red
 });
-
 
 // Function to open the modal
 function openModal(modalId) {
@@ -48,27 +46,48 @@ window.onclick = function(event) {
 }
 
 // Get the modal
-s
+const openModalButton = document.getElementById("openModal");
+const modal = document.getElementById("myModal");
+const closeModalButton = document.getElementById("closeModal");
 
+// Open modal
+openModalButton.addEventListener("click", () => {
+    modal.style.display = "block";
+});
 
-    const openModalButton = document.getElementById("openModal");
-    const modal = document.getElementById("myModal");
-    const closeModalButton = document.getElementById("closeModal");
+// Close modal
+closeModalButton.addEventListener("click", () => {
+    modal.style.display = "none";
+});
 
-    // Open modal
-    openModalButton.addEventListener("click", () => {
-        modal.style.display = "block";
-    });
-
-    // Close modal
-    closeModalButton.addEventListener("click", () => {
+// Close modal when clicking outside of the modal content
+window.addEventListener("click", (event) => {
+    if (event.target === modal) {
         modal.style.display = "none";
-    });
+    }
+});
 
-    // Close modal when clicking outside of the modal content
-    window.addEventListener("click", (event) => {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    });
+// Another modal opening and closing setup
 
+
+// Get references to the modal elements
+const openModals = document.getElementById("openModal"); // Button to open modal
+const modals = document.getElementById("myModal"); // Modal container
+const closeModals = document.getElementById("closeModal"); // Close button inside modal
+
+// Open modal when 'openModal' button is clicked
+openModals.addEventListener("click", () => {
+    modals.style.display = "block"; // Show modal
+});
+
+// Close modal when 'closeModal' button is clicked
+closeModals.addEventListener("click", () => {
+    modals.style.display = "none"; // Hide modal
+});
+
+// Close modal when clicking outside of the modal content
+window.addEventListener("click", (event) => {
+    if (event.target === modals) {
+        modals.style.display = "none"; // Hide modal if clicked outside
+    }
+});

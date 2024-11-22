@@ -32,15 +32,48 @@
         </header>
         
         <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-              Hi, I am <strong>Duwayne Frieslaar</strong>
-            </h1>
-            <h3 class="sub-header">Let's change the world together!</h3>
-                <img src="img/Confident.png" alt="picture of Duwayne" class="intro__img">
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">Junior Software Developer</p>
-        </section>
+      <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Duwayne Frieslaar</strong>
+    </h1>
+    <h3 class="sub-header">Let's change the world together!</h3>
+    <img src="img/Confident.png" alt="picture of Duwayne" class="intro__img">
+    <p class="section__subtitle section__subtitle--intro">Junior Fullstack Developer</p>
+
+    <!-- Button to trigger the modal -->
+    <button id="openModal">Contact</button>
+
+    <!-- Modal structure -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal">❌</span>
+            <h3>Hey, welcome to my contact form!</h3>
+            <p>Feel free to reach out!</p>
+    
+            <!-- Contact Form -->
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="userName">Your Name:</label>
+                    <input type="text" id="userName" name="user_name" required />
+                </div>
+    
+                <div class="form-group">
+                    <label for="userEmail">Your Email:</label>
+                    <input type="email" id="userEmail" name="user_email" required />
+                </div>
+    
+                <div class="form-group">
+                    <label for="userMessage">Your Message:</label>
+                    <textarea id="userMessage" name="user_message" rows="4" required></textarea>
+                </div>
+    
+                <button type="submit">Send Message</button>
+            </form>
+            
+            <div id="statusMessage"></div>
+        </div>
+    </div>
+</section>
         
         
         <!-- My services -->
@@ -208,6 +241,7 @@
     <img src="img/Capaciti certif.png" alt="javascript certificate" class="modal-content"/>
     <h3>Capaciti Javascript & Node.js</h3>
 </div>
+
 
         
         

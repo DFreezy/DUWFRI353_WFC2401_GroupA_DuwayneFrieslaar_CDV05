@@ -878,3 +878,111 @@ button:hover {
     max-width: 500px;
     border-radius: 10px;
 }
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+#closeModal {
+    color: #aaa;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#closeModal:hover,
+#closeModal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position to stay in place */
+    z-index: 9999; /* High z-index to ensure it sits above all other content */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
+}
+
+/* Modal content (this is the inner part of the modal) */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+/* Close button inside the modal */
+#closeModal {
+    color: #aaa;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Change color of the close button when hovered */
+#closeModal:hover,
+#closeModal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Section styles */
+.intro {
+    position: relative; /* Ensure this content is below the modal */
+    z-index: 1; /* Lower z-index than modal */
+    text-align: center;
+    padding: 50px;
+}
+
+/* Image styles */
+.intro__img {
+    width: 300px;
+    border-radius: 100%;
+    margin-top: 20px;
+    z-index: 1; /* Keep image below modal */
+}
+
+#contactForm{
+    background-color: #000;
+    color: white;
+}
+
+#modal-content{
+    background-color: #000;
+    color: white;
+}
