@@ -977,3 +977,34 @@ button:hover {
     z-index: 1; /* Keep image below modal */
 }
 
+/* New CSS for the Download CV Section */
+.download-cv {
+    text-align: center;
+    padding: 3em 2em;
+    background: var(--clr-light);
+    color: var(--clr-dark);
+}
+
+.download-cv h2 {
+    font-size: var(--fs-h2);
+    margin-bottom: 1em;
+    font-weight: var(--fw-bold);
+}
+
+.download-cv .btn {
+    background: var(--clr-accent);
+    padding: 1em 3em;
+    font-size: var(--fs-body);
+    color: var(--clr-dark);
+    text-decoration: none;
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: transform 200ms ease-in-out;
+}
+
+.download-cv .btn:hover {
+    transform: scale(1.1);
+    background: var(--clr-dark);
+    color: var(--clr-light);
+}

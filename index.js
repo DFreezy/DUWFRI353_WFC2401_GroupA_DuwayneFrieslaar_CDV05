@@ -70,3 +70,24 @@ window.addEventListener("click", (event) => {
 // Another modal opening and closing setup
 
 
+const openModals = document.getElementById("openModal");
+const modals = document.getElementById("myModal");
+const closeModals = document.getElementById("closeModal");
+
+// Open modal
+openModals.addEventListener("click", () => {
+    modals.style.display = "block";
+});
+
+// Close modal
+closeModals.addEventListener("click", () => {
+    modals.style.display = "none";
+});
+
+// Close modal when clicking outside of the modal content
+window.addEventListener("click", (event) => {
+    if (event.target === modals) {
+        modals.style.display = "none";
+    }
+});
+
