@@ -122,7 +122,9 @@ h3 { font-size: var(--fs-h3) }
 
 .section__title--intro strong {
     display: block;
+    flex-wrap: wrap;
 }
+
 
 .section__subtitle {
     margin: 0;
@@ -1008,3 +1010,4 @@ button:hover {
     background: var(--clr-dark);
     color: var(--clr-light);
 }
+
