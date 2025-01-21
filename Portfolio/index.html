@@ -31,8 +31,6 @@
             </nav>
         </header>
         <!-- Introduction -->
-
-        
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
               Hi, I am <strong>Duwayne Frieslaar</strong>
@@ -166,39 +164,39 @@
 <!--Award section-->
 <div>
 <div>
-<!-- Award Section -->
+<!-- Award section -->
 <div id="awards">
     <h1>Certificates</h1>
-    <div class="carousel-container">
-        <button class="carousel-btn prev-btn">❮</button>
-        <div class="carousel-track-container">
-            <div class="carousel-track">
-                <div class="certificate-item" onclick="openModal('codespace-modal')">
-                    <h3>Codespace academy software development</h3>
-                    <img src="img/Codespace.png" alt="codespace certificate" width="400" height="400" />
-                </div>
-                <div class="certificate-item" onclick="openModal('award1-modal')">
-                    <h3>Codespace award</h3>
-                    <img src="img/Most_Helpful_in_Class_Channels___Community_Contributor_x_Duwayne.png" alt="award1" width="400" height="400" />
-                </div>
-                <div class="certificate-item" onclick="openModal('award2-modal')">
-                    <h3>Codespace award</h3>
-                    <img src="img/Most_Versatile_Developer_x_Duwayne.png" alt="award2" width="400" height="400" />
-                </div>
-                <div class="certificate-item" onclick="openModal('capaciti-modal')">
-                    <h3>Capaciti Javascript & Node.js</h3>
-                    <img src="img/Capaciti certif.png" alt="javascript certificate" width="400" height="400" />
-                </div>
-                <div class="certificate-item" onclick="openModal('capaciti-modal')">
-                    <h3>Fullstack development</h3>
-                    <img src="img/fullstack certificate.PNG" alt="fullstack certificate" width="400" height="400" />
-                </div>
-            </div>
+    <div class="certificate-grid">
+        <div class="certificate-item" onclick="openModal('codespace-modal')">
+            <h3>Codespace academy software development</h3>
+            <img src="img/Codespace.png" alt="codespace certificate" width="400" height="400"/>
         </div>
-        <button class="carousel-btn next-btn">❯</button>
+        <div class="certificate-item" onclick="openModal('award1-modal')">
+            <h3>Codespace award</h3>
+            <img src="img/Most_Helpful_in_Class_Channels___Community_Contributor_x_Duwayne.png" alt="award1" width="400" height="400"/>
+        </div>
+        <div class="certificate-item" onclick="openModal('award2-modal')">
+            <h3>Codespace award</h3>
+            <img src="img/Most_Versatile_Developer_x_Duwayne.png" alt="award2" width="400" height="400"/>
+        </div>
+        <div class="certificate-item" onclick="openModal('capaciti-modal')">
+            <h3>Capaciti Javascript & Node.js</h3>
+            <img src="img/Capaciti certif.png" alt="javascript certificate" width="400" height="400"/>
+        </div>
+        <div class="certificate-item" onclick="openModal('fullstack-modal')">
+            <h3>Fullstack development</h3>
+            <img src="img/fullstack certificate.PNG" alt="fullstack certificate" width="200" height="200"/>
+        </div>
+        <div class="certificate-item" onclick="openModal('agile-sdlc-modal')">
+            <h3>SDLC project management</h3>
+            <img src="./img/project.PNG" alt="SDLC and Agile" width="400" height="400"/>
+        </div>
+        <div class="certificate-item" onclick="openModal('java-modal')">
+            <h3>Java beginner</h3>
+            <img src="./img/SDLC Agile.jpg" alt="Java course" width="400" height="400"/>
+        </div>
     </div>
-</div>
-
 </div>
 
 <!-- Modals for certificates -->
@@ -224,6 +222,24 @@
     <span class="close" onclick="closeModal('capaciti-modal')">&times;</span>
     <img src="img/Capaciti certif.png" alt="javascript certificate" class="modal-content"/>
     <h3>Capaciti Javascript & Node.js</h3>
+</div>
+
+<div id="fullstack-modal" class="modal">
+    <span class="close" onclick="closeModal('fullstack-modal')">&times;</span>
+    <img src="img/fullstack certificate.PNG" alt="fullstack certificate" class="modal-content"/>
+    <h3>Fullstack development</h3>
+</div>
+
+<div id="agile-sdlc-modal" class="modal">
+    <span class="close" onclick="closeModal('agile-sdlc-modal')">&times;</span>
+    <img src="./img/project.PNG" alt="SDLC and Agile" class="modal-content"/>
+    <h3>SDLC project management</h3>
+</div>
+
+<div id="java-modal" class="modal">
+    <span class="close" onclick="closeModal('java-modal')">&times;</span>
+    <img src="./img/SDLC Agile.jpg" alt="Java course" class="modal-content"/>
+    <h3>Java beginner</h3>
 </div>
 
         
